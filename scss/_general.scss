@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&display=swap');
+$text-color: #333136;
+$white: #ffffff;
+$black: #000000;
+$section-bg: #E7816B;
+$footer-bg: #1D1C1E;
+
+ul {
+    list-style-type: none;
+}
+
+a {    
+    text-decoration: none;
+    color: inherit;
+}
+
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+}

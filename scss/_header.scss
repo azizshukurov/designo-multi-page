@@ -1,0 +1,25 @@
+header{
+    padding: 36px 0 20px 0;
+    section{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        nav{
+            ul{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                column-gap: 42px;
+                li{
+                    a{
+                        font-weight: 400;
+                        font-size: 14px;
+                        letter-spacing: 1px;
+                        color: $text-color;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+    }
+}
