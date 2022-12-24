@@ -22,7 +22,7 @@ body {
 }
 
 header {
-  padding: 36px 0 20px 0;
+  padding: 42px 0 20px 0;
 }
 header section {
   display: -webkit-box;
@@ -55,4 +55,45 @@ header section nav ul li a {
   letter-spacing: 1px;
   color: #333136;
   text-transform: uppercase;
+}
+header section nav .gamburger_menu {
+  display: none;
+  font-size: 28px;
+}
+
+@media only screen and (max-width: 1140px) {
+  .container {
+    width: 900px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .container {
+    width: 700px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .container {
+    width: 600px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 500px;
+  }
+  header section nav ul {
+    display: none;
+  }
+  header section nav .gamburger_menu {
+    display: block;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .container {
+    width: 400px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .container {
+    width: 300px;
+  }
 }/*# sourceMappingURL=style.css.map */
