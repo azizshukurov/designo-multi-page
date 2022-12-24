@@ -8,6 +8,10 @@ a {
   color: inherit;
 }
 
+button {
+  border: 0;
+}
+
 .container {
   width: 1140px;
   margin: 0 auto;
@@ -22,7 +26,7 @@ body {
 }
 
 header {
-  padding: 42px 0 20px 0;
+  padding: 38px 0;
 }
 header section {
   display: -webkit-box;
@@ -61,19 +65,131 @@ header section nav .gamburger_menu {
   font-size: 28px;
 }
 
+main {
+  margin-bottom: 160px;
+}
+main section {
+  background: #E7816B;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 80px;
+     -moz-column-gap: 80px;
+          column-gap: 80px;
+  position: relative;
+}
+main section:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 600px;
+  height: 600px;
+  border-radius: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(93, 2, 2, 0.0001)), to(rgba(93, 2, 2, 0.497569)));
+  background: linear-gradient(90deg, rgba(93, 2, 2, 0.0001) 0%, rgba(93, 2, 2, 0.497569) 100%);
+  mix-blend-mode: normal;
+  opacity: 0.31;
+  -webkit-transform: matrix(0, -1, -1, 0, 0, 0);
+          transform: matrix(0, -1, -1, 0, 0, 0);
+}
+main section .main__info {
+  padding-left: 90px;
+}
+main section .main__info h2 {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 48px;
+  color: #ffffff;
+  margin-bottom: 11px;
+}
+main section .main__info p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+main section .main__info button {
+  background: #ffffff;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #333136;
+  cursor: pointer;
+  padding: 18px 24px;
+}
+main section .main__bg img {
+  display: block;
+}
+
 @media only screen and (max-width: 1140px) {
   .container {
     width: 900px;
+  }
+  main section .main__info {
+    padding-left: 40px;
+  }
+  main section .main__info h2 {
+    font-size: 32px;
   }
 }
 @media only screen and (max-width: 900px) {
   .container {
     width: 700px;
   }
+  main section {
+    -webkit-column-gap: 0px;
+       -moz-column-gap: 0px;
+            column-gap: 0px;
+  }
+  main section:before {
+    width: 450px;
+    height: 450px;
+  }
+  main section .main__info {
+    padding-left: 20px;
+  }
+  main section .main__info h2 {
+    font-size: 24px;
+  }
+  main section .main__info p {
+    font-size: 14px;
+  }
 }
 @media only screen and (max-width: 700px) {
   .container {
     width: 600px;
+  }
+  main section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    overflow: hidden;
+  }
+  main section:before {
+    top: 100px;
+    left: 200px;
+    width: 500px;
+    height: 500px;
+  }
+  main section .main__info {
+    padding: 20px 58px 0 58px;
+  }
+  main section .main__info h2 {
+    font-size: 48px;
+  }
+  main section .main__info p {
+    font-size: 16px;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -86,14 +202,45 @@ header section nav .gamburger_menu {
   header section nav .gamburger_menu {
     display: block;
   }
+  main section:before {
+    left: 150px;
+  }
+  main section .main__info {
+    padding: 20px 38px 0 38px;
+  }
+  main section .main__info h2 {
+    font-size: 42px;
+  }
 }
 @media only screen and (max-width: 500px) {
   .container {
     width: 400px;
   }
+  main section {
+    width: 100% !important;
+    padding: 0 10px;
+  }
+  main section:before {
+    left: 0px;
+  }
+  main section .main__info {
+    padding: 20px 24px 0 24px;
+  }
+  main section .main__info h2 {
+    font-size: 40px;
+  }
 }
 @media only screen and (max-width: 400px) {
   .container {
     width: 300px;
+  }
+  main section {
+    padding: 0 5px;
+  }
+  main section .main__info {
+    padding: 20px 0px 0 0;
+  }
+  main section .main__info h2 {
+    font-size: 28px;
   }
 }/*# sourceMappingURL=style.css.map */

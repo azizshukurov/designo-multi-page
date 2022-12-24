@@ -2,17 +2,68 @@
     .container{
         width: 900px;
     }
+    main{
+        section{
+            .main__info{
+                padding-left: 40px;
+                h2{
+                    font-size: 32px;
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 900px) {
     .container{
         width: 700px;
     }
+    main{
+        section{
+            column-gap: 0px;
+                &:before{
+                    width: 450px;
+                    height: 450px;
+                }
+            .main__info{
+                padding-left: 20px;
+                h2{
+                    font-size: 24px;
+                }
+                p{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 700px) {
     .container{
         width: 600px;
+    }
+    main{
+        section{
+            flex-direction: column;
+            overflow: hidden;
+                &:before{
+                    top: 100px;
+                    left: 200px;
+                    width: 500px;
+                    height: 500px;
+                }
+            .main__info{
+                padding: 20px 58px 0 58px;
+                h2{
+                    font-size: 48px;
+                    // line-height: 48px;
+                }
+                p{
+                    font-size: 16px;
+                    // line-height: 26px;
+                }
+            }
+        }
     }
 }
 
@@ -32,16 +83,55 @@
             }
         }
     }
+    main{
+        section{
+                &:before{
+                    left: 150px;
+                }
+            .main__info{
+                padding: 20px 38px 0 38px;
+                h2{
+                    font-size: 42px;
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 500px) {
     .container{
         width: 400px;
     }
+    main{
+        section{
+            width: 100% !important;
+            padding: 0 10px;
+                &:before{
+                    left: 0px;
+                }
+            .main__info{
+                padding: 20px 24px 0 24px;
+                h2{
+                    font-size: 40px;
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 400px) {
     .container{
         width: 300px;
+    }
+    main{
+        section{
+            padding: 0 5px;
+            .main__info{
+                padding: 20px 0px 0 0;
+                h2{
+                    font-size: 28px;
+                }
+            }
+        }
     }
 }
