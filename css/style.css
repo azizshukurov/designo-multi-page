@@ -163,12 +163,17 @@ main section .main__bg img {
 .about section .about__footer {
   background: #E7816B;
   border-radius: 15px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 0 95px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 45px 95px;
 }
 .about section .about__footer .about__ft_info {
   color: #ffffff;
+  width: 55%;
 }
 .about section .about__footer .about__ft_info h5 {
   font-weight: 500;
@@ -176,7 +181,7 @@ main section .main__bg img {
 }
 .about section .about__footer .about__ft_info p {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 26px;
 }
 .about section .about__footer .about__ft_btn {
@@ -289,6 +294,12 @@ aside section .veiw_design {
        -moz-column-gap: 5px;
             column-gap: 5px;
   }
+  .about section .about__footer {
+    padding: 35px 50px;
+  }
+  .about section .about__footer .about__ft_info {
+    width: 60%;
+  }
 }
 @media only screen and (max-width: 700px) {
   .container {
@@ -337,6 +348,26 @@ aside section .veiw_design {
             column-gap: 32px;
     text-align: left;
   }
+  .about section .about__footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .about section .about__footer .about__ft_info {
+    text-align: center;
+    width: 100%;
+  }
+  .about section .about__footer p {
+    margin-bottom: 32px;
+  }
 }
 @media only screen and (max-width: 600px) {
   .container {
@@ -359,6 +390,9 @@ aside section .veiw_design {
   }
   aside section .design__info h3 {
     font-size: 40px;
+  }
+  .about section .about__footer {
+    padding: 20px 30px;
   }
 }
 @media only screen and (max-width: 500px) {
@@ -388,6 +422,9 @@ aside section .veiw_design {
             flex-direction: column;
     text-align: center;
   }
+  .about section .about__footer .about__ft_info h5 {
+    font-size: 36px;
+  }
 }
 @media only screen and (max-width: 400px) {
   .container {
@@ -407,6 +444,12 @@ aside section .veiw_design {
   }
   aside section .design__info h3 {
     font-size: 24px;
+  }
+  .about section .about__footer {
+    padding: 20px 15px;
+  }
+  .about section .about__footer .about__ft_info h5 {
+    font-size: 32px;
   }
 }
 @media only screen and (max-width: 350px) {

@@ -63,6 +63,12 @@
             .about__wrap{
                 column-gap: 5px;
             }
+            .about__footer{
+                padding: 35px 50px;
+                .about__ft_info{
+                    width: 60%;
+                } 
+            }
         }
     }
 }
@@ -113,6 +119,19 @@
                     text-align: left;
                 }
             }
+            .about__footer{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                .about__ft_info{
+                    text-align: center;
+                    width: 100%;
+                }
+                p{
+                    margin-bottom: 32px;
+                }
+            }
         }
     }
 }
@@ -155,6 +174,13 @@
             }
         }
     }
+    .about{
+        section{
+            .about__footer{
+                padding: 20px 30px;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 500px) {
@@ -193,6 +219,13 @@
                     text-align: center;
                 }
             }
+            .about__footer{
+                .about__ft_info{
+                    h5{
+                        font-size: 36px;
+                    }
+                }
+            }
         }
     }
 }
@@ -218,6 +251,18 @@
             .design__info{
                 h3{
                     font-size: 24px;
+                }
+            }
+        }
+    }
+    .about{
+        section{
+            .about__footer{
+                padding: 20px 15px;
+                .about__ft_info{
+                    h5{
+                        font-size: 32px;
+                    }
                 }
             }
         }

@@ -32,21 +32,19 @@
         .about__footer{
             background: $section-bg;
             border-radius: 15px;
-            // display: flex;
-            // justify-content: space-between;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            // column-gap: 150px;
-            padding: 0 95px;
+            display: flex;
+            justify-content: space-between;
+            padding: 45px 95px;
             .about__ft_info{
                 color: $white;
+                width: 55%;
                 h5{
                     font-weight: 500;
                     font-size: 40px;
                 }
                 p{
                     font-weight: 400;
-                    font-size: 16px;
+                    font-size: 18px;
                     line-height: 26px;
                 }
             }
