@@ -66,7 +66,7 @@ header section nav .gamburger_menu {
 }
 
 main {
-  margin-bottom: 160px;
+  margin-bottom: 90px;
 }
 main section {
   background: #E7816B;
@@ -131,6 +131,46 @@ main section .main__bg img {
   display: block;
 }
 
+aside {
+  margin-bottom: 160px;
+  padding: 0 20px;
+}
+aside section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
+}
+aside section .web_design, aside section .app_design, aside section .graphic_design {
+  position: relative;
+}
+aside section .design__info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+aside section .design__info h3, aside section .design__info p {
+  font-weight: 500;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+aside section .design__info h3 {
+  font-size: 40px;
+  letter-spacing: 2px;
+  margin-bottom: 14px;
+}
+aside section .design__info p {
+  font-size: 15px;
+  letter-spacing: 5px;
+}
+aside section .veiw_design {
+  display: grid;
+  row-gap: 14px;
+}
+
 @media only screen and (max-width: 1140px) {
   .container {
     width: 900px;
@@ -140,6 +180,9 @@ main section .main__bg img {
   }
   main section .main__info h2 {
     font-size: 32px;
+  }
+  aside section img {
+    width: 100%;
   }
 }
 @media only screen and (max-width: 900px) {
@@ -163,6 +206,15 @@ main section .main__bg img {
   }
   main section .main__info p {
     font-size: 14px;
+  }
+  aside section .design__info h3 {
+    font-size: 24px;
+  }
+  aside section .design__info p {
+    font-size: 14px;
+  }
+  aside section .veiw_design {
+    row-gap: 0px;
   }
 }
 @media only screen and (max-width: 700px) {
@@ -191,6 +243,15 @@ main section .main__bg img {
   main section .main__info p {
     font-size: 16px;
   }
+  aside {
+    padding: 0 10px;
+  }
+  aside section {
+    grid-template-columns: 1fr;
+  }
+  aside section .design__info h3 {
+    font-size: 48px;
+  }
 }
 @media only screen and (max-width: 600px) {
   .container {
@@ -211,6 +272,9 @@ main section .main__bg img {
   main section .main__info h2 {
     font-size: 42px;
   }
+  aside section .design__info h3 {
+    font-size: 40px;
+  }
 }
 @media only screen and (max-width: 500px) {
   .container {
@@ -229,18 +293,27 @@ main section .main__bg img {
   main section .main__info h2 {
     font-size: 40px;
   }
+  aside section .design__info h3 {
+    font-size: 28px;
+  }
 }
 @media only screen and (max-width: 400px) {
   .container {
     width: 300px;
   }
   main section {
-    padding: 0 5px;
+    padding: 0 15px;
   }
   main section .main__info {
     padding: 20px 0px 0 0;
   }
   main section .main__info h2 {
-    font-size: 28px;
+    font-size: 26px;
+  }
+  aside {
+    padding: 0 0px;
+  }
+  aside section .design__info h3 {
+    font-size: 24px;
   }
 }/*# sourceMappingURL=style.css.map */

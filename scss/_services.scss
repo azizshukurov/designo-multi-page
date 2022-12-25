@@ -1,0 +1,36 @@
+aside{
+    margin-bottom: 160px;
+    padding: 0 20px;
+    section{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 30px;
+        .web_design, .app_design, .graphic_design{
+            position: relative;
+        }
+        .design__info{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            h3, p{
+                font-weight: 500;
+                color: $white;
+                text-transform: uppercase;
+            }
+            h3{
+                font-size: 40px;
+                letter-spacing: 2px;
+                margin-bottom: 14px;
+            }
+            p{
+                font-size: 15px;
+                letter-spacing: 5px;
+            }
+        }
+        .veiw_design{
+            display: grid;
+            row-gap: 14px;
+        }
+    }
+}

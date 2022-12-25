@@ -12,6 +12,13 @@
             }
         }
     }
+    aside{
+        section{
+            img{
+                width: 100%;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 900px) {
@@ -36,6 +43,21 @@
             }
         }
     }
+    aside{
+        section{
+            .design__info{
+                h3{
+                    font-size: 24px;
+                }
+                p{
+                    font-size: 14px;
+                }
+            }
+            .veiw_design{
+                row-gap: 0px;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 700px) {
@@ -56,11 +78,20 @@
                 padding: 20px 58px 0 58px;
                 h2{
                     font-size: 48px;
-                    // line-height: 48px;
                 }
                 p{
                     font-size: 16px;
-                    // line-height: 26px;
+                }
+            }
+        }
+    }
+    aside{
+        padding: 0 10px;
+        section{
+            grid-template-columns: 1fr;
+            .design__info{
+                h3{
+                    font-size: 48px;
                 }
             }
         }
@@ -96,6 +127,15 @@
             }
         }
     }
+    aside{
+        section{
+            .design__info{
+                h3{
+                    font-size: 40px;
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 500px) {
@@ -117,6 +157,15 @@
             }
         }
     }
+    aside{
+        section{
+            .design__info{
+                h3{
+                    font-size: 28px;
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 400px) {
@@ -125,11 +174,21 @@
     }
     main{
         section{
-            padding: 0 5px;
+            padding: 0 15px;
             .main__info{
                 padding: 20px 0px 0 0;
                 h2{
-                    font-size: 28px;
+                    font-size: 26px;
+                }
+            }
+        }
+    }
+    aside{
+        padding: 0 0px;
+        section{
+            .design__info{
+                h3{
+                    font-size: 24px;
                 }
             }
         }
