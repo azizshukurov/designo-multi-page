@@ -58,6 +58,13 @@
             }
         }
     }
+    .about{
+        section{
+            .about__wrap{
+                column-gap: 5px;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 700px) {
@@ -92,6 +99,18 @@
             .design__info{
                 h3{
                     font-size: 48px;
+                }
+            }
+        }
+    }
+    .about{
+        section{
+            .about__wrap{
+                grid-template-columns: 1fr;
+                .about__item{
+                    display: flex;
+                    column-gap: 32px;
+                    text-align: left;
                 }
             }
         }
@@ -166,11 +185,21 @@
             }
         }
     }
+    .about{
+        section{
+            .about__wrap{
+                .about__item{
+                    flex-direction: column;
+                    text-align: center;
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 400px) {
     .container{
-        width: 300px;
+        width: 350px;
     }
     main{
         section{
@@ -192,5 +221,11 @@
                 }
             }
         }
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .container{
+        width: 300px;
     }
 }
