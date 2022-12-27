@@ -14,9 +14,13 @@ header{
                     a{
                         font-weight: 400;
                         font-size: 14px;
-                        letter-spacing: 1px;
+                        letter-spacing: 0.5px;
                         color: $text-color;
                         text-transform: uppercase;
+                        transition: 0.3s;
+                        &:hover{
+                            color: $section-bg;
+                        }
                     }
                 }
             }

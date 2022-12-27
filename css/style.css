@@ -56,9 +56,14 @@ header section nav ul {
 header section nav ul li a {
   font-weight: 400;
   font-size: 14px;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
   color: #333136;
   text-transform: uppercase;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+header section nav ul li a:hover {
+  color: #E7816B;
 }
 header section nav .gamburger_menu {
   display: none;
@@ -126,6 +131,12 @@ main section .main__info button {
   color: #333136;
   cursor: pointer;
   padding: 18px 24px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+main section .main__info button:hover {
+  background: #FFAD9B;
+  color: #ffffff;
 }
 main section .main__bg img {
   display: block;
@@ -206,6 +217,12 @@ main section .main__bg img {
   color: #333136;
   padding: 17px 19px;
   cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.about section .about__footer .about__ft_btn button:hover {
+  background: #FFAD9B;
+  color: #ffffff;
 }
 
 aside {
@@ -319,9 +336,14 @@ footer section .footer__bottom .footer__social i {
   color: #E7816B;
   font-size: 24px;
   cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 footer section .footer__bottom .footer__social i:last-child {
   margin-right: 0;
+}
+footer section .footer__bottom .footer__social i:hover {
+  color: #FFAD9B;
 }
 
 @media only screen and (max-width: 1140px) {

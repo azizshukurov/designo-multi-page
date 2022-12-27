@@ -46,6 +46,11 @@ main{
                 color: $text-color;
                 cursor: pointer;
                 padding: 18px 24px;
+                transition: 0.5s;
+                &:hover{
+                    background: #FFAD9B;
+                    color: $white;
+                }
             }
         }
         .main__bg{

@@ -53,8 +53,12 @@ footer{
                     color: $section-bg;
                     font-size: 24px;
                     cursor: pointer;
+                    transition: 0.5s;
                     &:last-child{
                         margin-right: 0;
+                    }
+                    &:hover{
+                        color: #FFAD9B;
                     }
                 }
             }
