@@ -246,9 +246,10 @@ aside section .veiw_design {
 
 footer {
   background: #1D1C1E;
+  color: #ffffff;
 }
 footer section {
-  padding: 200px 0;
+  padding: 144px 0;
 }
 footer section .footer__top {
   display: -webkit-box;
