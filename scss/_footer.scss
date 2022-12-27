@@ -1,0 +1,30 @@
+footer{
+    background: $footer-bg;
+    section{
+            padding: 200px 0;
+        .footer__top{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #343334;
+            padding: 0 0 40px 0;
+            nav{
+                ul{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    column-gap: 42px;
+                    li{
+                        a{
+                            font-weight: 400;
+                            font-size: 14px;
+                            letter-spacing: 1px;
+                            color: $white;
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

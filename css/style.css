@@ -244,6 +244,47 @@ aside section .veiw_design {
   row-gap: 14px;
 }
 
+footer {
+  background: #1D1C1E;
+}
+footer section {
+  padding: 200px 0;
+}
+footer section .footer__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #343334;
+  padding: 0 0 40px 0;
+}
+footer section .footer__top nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 42px;
+     -moz-column-gap: 42px;
+          column-gap: 42px;
+}
+footer section .footer__top nav ul li a {
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
 @media only screen and (max-width: 1140px) {
   .container {
     width: 900px;
