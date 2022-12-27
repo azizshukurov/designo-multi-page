@@ -134,6 +134,15 @@
             }
         }
     }
+    footer{
+        section{
+            .footer__bottom{
+                flex-direction: column;
+                align-items: center;
+                row-gap: 15px;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -178,6 +187,15 @@
         section{
             .about__footer{
                 padding: 20px 30px;
+            }
+        }
+    }
+    footer{
+        section{
+            .footer__top{
+                flex-direction: column;
+                align-items: center;
+                row-gap: 15px;
             }
         }
     }
@@ -228,6 +246,19 @@
             }
         }
     }
+    footer{
+        section{
+            .footer__top{
+                nav{
+                    ul{
+                        li{
+                            column-gap: 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 400px) {
@@ -262,6 +293,19 @@
                 .about__ft_info{
                     h5{
                         font-size: 32px;
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        section{
+            .footer__top{
+                nav{
+                    ul{
+                        flex-direction: column;
+                        row-gap: 32px;
+                        align-items: center;
                     }
                 }
             }
