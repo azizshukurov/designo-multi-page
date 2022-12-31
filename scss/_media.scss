@@ -1,3 +1,4 @@
+// Desktop
 @media only screen and (max-width: 1140px) {
     .container{
         width: 900px;
@@ -73,6 +74,7 @@
     }
 }
 
+// Tablet
 @media only screen and (max-width: 700px) {
     .container{
         width: 600px;
@@ -201,6 +203,7 @@
     }
 }
 
+// Mobile
 @media only screen and (max-width: 500px) {
     .container{
         width: 400px;
